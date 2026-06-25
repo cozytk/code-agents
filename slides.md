@@ -543,6 +543,34 @@ class: divider claude
 <p class="note"><b>이게 단순 채팅과 다르다</b> 모델이 자기 결과물을 <em>스스로 렌더링해 보고 고치는</em> 루프 — 사람이 캡처를 일일이 확인하지 않아도 된다.</p>
 
 ---
+class: claude
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>데모 — 작동하는 산출물</em></p>
+
+# 그리고 — <em>작동하는 인터랙티브 탐색기</em>도 즉석에서
+
+<div class="split evidence">
+<div>
+<p class="thesis">설명용 정적 이미지가 아니라, 의뢰 한 번으로 만든 <b>실제 동작하는 웹 앱</b>입니다. 탭으로 지표를 바꾸고, 행을 눌러 강조하고, 용도를 고르면 추천이 바뀝니다.</p>
+
+<div class="deflist narrow">
+<div><b>인라인 제작</b><span>바닐라 HTML/JS, 의존성 0 — 덱과 동일한 색·타이포</span></div>
+<div><b>동작 검증</b><span>Playwright로 클릭·전환·강조를 자동 확인(콘솔 에러 0)</span></div>
+<div><b>라이브 배포</b><span>같은 사이트에 함께 — 발표 중 직접 눌러볼 수 있음</span></div>
+</div>
+
+<p class="refs">▶ cozytk.github.io/code-agents/demo.html</p>
+</div>
+<div>
+<figure class="shot wide">
+<img src="./images/demo-explorer.png" alt="코드 에이전트 데이터 탐색기 — 인터랙티브 데모" />
+<figcaption>Claude Code가 즉석 제작·검증·배포한 인터랙티브 탐색기</figcaption>
+</figure>
+</div>
+</div>
+
+---
 class: divider
 ---
 
