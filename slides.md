@@ -261,11 +261,21 @@ class: codex
 
 # 최근에 들어온 것 — <em>모바일까지 잇는 통합 표면</em>
 
+<div class="split evidence">
+<div>
 <div class="timeline">
-<div><b>GPT-5.2 · 5.3-Codex</b><span>SWE-bench 80% · Terminal-Bench 77.3% · ~25% 더 빠름 · 보안 도메인 강화</span></div>
-<div><b>Codex Remote — 모바일 GA</b><span>2026.6 · QR 페어링으로 폰에서 작업 시작·승인·diff 리뷰</span></div>
-<div><b>데스크탑 앱 통합</b><span>Task 사이드바 · PR 리뷰 페인 · Artifact 뷰어 — 「커맨드 센터」</span></div>
-<div><b>멀티에이전트 위임 · <code>/import</code></b><span>서브에이전트 위임(explicit/proactive) · Claude Code 설정 가져오기</span></div>
+<div><b>GPT-5.2 · 5.3-Codex</b><span>SWE-bench 80% · Terminal-Bench 77.3% · ~25% 더 빠름</span></div>
+<div><b>Codex Remote — 모바일 GA</b><span>2026.6 · QR 페어링으로 폰에서 승인·diff 리뷰</span></div>
+<div><b>데스크탑 앱 통합</b><span>Task 사이드바 · PR 리뷰 페인 · Artifact 뷰어</span></div>
+<div><b>멀티에이전트 위임 · <code>/import</code></b><span>서브에이전트 위임 · Claude Code 설정 가져오기</span></div>
+</div>
+</div>
+<div>
+<figure class="shot wide">
+<img src="./images/codex-og.png" alt="OpenAI Codex 인터페이스 — 사이드바·작업·코드 패널" />
+<figcaption>Codex — 사이드바·작업·코드를 한 표면에서</figcaption>
+</figure>
+</div>
 </div>
 
 <p class="refs">출처 · developers.openai.com/codex/changelog · OpenAI 뉴스 (2025.09~2026.06)</p>
