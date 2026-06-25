@@ -1,0 +1,69 @@
+/* ============================================================
+   THEME: agent-console — 코드 에이전트 비교 (다크)
+   쓰임새: Claude Code · Codex · Antigravity 소개·비교 발표
+   컨셉: 에이전트 관제 콘솔(Mission Control). 차분한 다크 슬레이트 캔버스 +
+        절제된 청록(teal) 하우스 액센트. 브랜드 섹션은 슬라이드 class로 액센트 전환:
+          .claude      → 주황 (Anthropic clay)
+          .codex       → 보라 (Codex violet)
+          .antigravity → 블루 (Google)
+   타이포: Space Grotesk(디스플레이) · Pretendard(본문) · JetBrains Mono(라벨/코드)
+   frontmatter: colorSchema: dark   ← 다크 테마는 반드시 dark (shiki 다크 토큰 정렬)
+   ============================================================ */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+  --display: 'Space Grotesk', 'Pretendard', sans-serif;
+  --sans: 'Pretendard', 'IBM Plex Sans KR', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+
+  --paper: #0F1217;          /* 깊은 슬레이트(순흑 아님, 약간 청회색) */
+  --ink: #E9EDF3;
+  --dim: #8C97A8;
+  --rule: #262D38;
+  --card: #161B23;
+
+  /* 하우스 액센트 — 중립 청록(어느 브랜드에도 치우치지 않음) */
+  --accent: #4FCDC2;
+  --accent-soft: #102A29;
+
+  /* 브랜드 토큰 — SVG/카드에서 직접 참조 + 슬라이드 class로 --accent 전환 */
+  --claude: #E08A5E;         --claude-soft: #2A1A11;
+  --codex: #AC8DFB;          --codex-soft: #1E1733;
+  --antigravity: #5C9CFF;    --antigravity-soft: #0F1E33;
+
+  --chip-bg: #1E2530;
+  --shadow: 0 16px 22px -18px rgba(0, 0, 0, 0.7);
+  --shot-bar: #1E2530;
+  --shot-dots: #46505E;
+
+  --ok: #46C28C;   --ok-soft: #0F2A1E;
+  --warn: #E2A33C; --warn-soft: #2A2008;
+  --bad: #F0625D;  --bad-soft: #2A1413;
+}
+
+/* ---- 브랜드 섹션: 슬라이드 frontmatter class 로 액센트 전환 ----
+   예) class: claude  /  class: divider codex  /  class: cover antigravity
+   --accent 만 바꾸면 크럼·헤드라인 em·steps 번호·note·.pane.key 등 코어가 전부 따라온다. */
+.slidev-layout.claude      { --accent: var(--claude);      --accent-soft: var(--claude-soft); }
+.slidev-layout.codex       { --accent: var(--codex);       --accent-soft: var(--codex-soft); }
+.slidev-layout.antigravity { --accent: var(--antigravity); --accent-soft: var(--antigravity-soft); }
+
+/* 다크 테마: 스크린샷 프레임 배경을 카드색으로(라이트 UI 캡처는 흰 배경 그대로 보임) */
+.shot img { background: var(--card) !important; }
+
+/* 시그니처: 콘솔 느낌의 각진 액센트 틱(둥근 모서리 최소) */
+.eyebrow::before, .crumbs::before { border-radius: 1px; }
+
+/* 브랜드 인라인 강조 텍스트 색 (본문에서 브랜드명 강조용) */
+.slidev-layout .t-claude { color: var(--claude); font-style: normal; font-weight: 600; }
+.slidev-layout .t-codex  { color: var(--codex);  font-style: normal; font-weight: 600; }
+.slidev-layout .t-anti   { color: var(--antigravity); font-style: normal; font-weight: 600; }
+
+/* 한글 이탤릭 금지 — 어떤 컨텍스트의 <em>도 기울이지 않는다(코어는 h1/lead/quote만 처리).
+   note·callout·thesis·figcaption 안의 일반 em은 색·굵기로 강조(.lead em과 동일 언어). */
+.slidev-layout em { font-style: normal; }
+.slidev-layout .note em,
+.slidev-layout .callout em,
+.slidev-layout .thesis em,
+.slidev-layout figcaption em { color: var(--accent); font-weight: 600; }
