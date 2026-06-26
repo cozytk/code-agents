@@ -190,9 +190,9 @@ class: divider codex
 
 <p class="div-no">02</p>
 
-## 차별점 — 플랫폼마다 강한 곳이 다르다
+## 각 에이전트와 그 기능 — 대부분은 이름만 다르다
 
-<p class="div-sub">같은 능력 위에 각 팀이 얹은 특별한 한 가지</p>
+<p class="div-sub">Claude Code·Codex를 소개하고, 같은 기능을 다른 도구는 뭐라 부르는지 짚는다</p>
 
 <p class="div-file">Claude Code · Codex · Antigravity</p>
 
@@ -200,25 +200,25 @@ class: divider codex
 class: claude
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Claude Code</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Claude Code</em></p>
 
-# <em>Claude Code</em> — 스킬·서브에이전트로 깊이 가는 신뢰성
+# Claude Code — <em>터미널 태생, 끝까지 파고드는 에이전트</em>
+
+<p class="thesis">Anthropic의 코딩 에이전트. 긴 자율 작업과 신뢰성으로 복잡·중요한 일에 강하다. 기능 대부분은 다른 도구에도 있지만, 하나는 아직 고유하다.</p>
 
 <div class="deflist">
-<div><b>Skills</b><span><code>SKILL.md</code>로 워크플로우를 패키징 — 필요할 때만 로드, 팀과 공유, 재현 가능</span></div>
-<div><b>Subagents</b><span>별도 컨텍스트 창에서 탐색·연구를 병렬 실행 → 메인 대화를 깨끗하게 유지</span></div>
-<div><b>Plan mode</b><span>편집 전 계획만 제안 — 실행 전 전략을 사람이 통제</span></div>
-<div><b>Hooks</b><span>편집 후 자동 포맷·검사 등 <b>결정론적</b> 자동화(LLM 판단에 안 맡김)</span></div>
-<div><b>Checkpoints</b><span>프롬프트마다 자동 저장 → <code>/rewind</code>로 되돌리기</span></div>
+<div><b>하네스 묶음</b><span>Skills·Subagents·Hooks·MCP로 확장한다 — <em>이 묶음은 Codex·Antigravity에도 있다(이름만 다름)</em></span></div>
+<div><b>Checkpoints <code>/rewind</code></b><span>프롬프트마다 자동 스냅샷·되돌리기 — <em>여기는 고유</em>. Codex엔 없고, Antigravity는 불안정</span></div>
+<div><b>긴 자율 작업</b><span>한 지시로 수십 분~수 시간, 중간에 멈춰 세워 방향을 틀 수 있다</span></div>
 </div>
 
-<p class="note"><b>커뮤니티</b> HN "What makes Claude Code so damn good" 스레드 — <em>「여러 파일에 걸친 코드를 읽고 고치는 데 가장 똑똑하다」</em>, <em>「멈춰 세우고 방향을 바꿀 수 있다」</em>.</p>
+<p class="note"><b>커뮤니티</b> HN "What makes Claude Code so damn good" — <em>「여러 파일에 걸친 코드를 읽고 고치는 데 가장 똑똑하다」</em>.</p>
 
 ---
 class: claude
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Claude Code · 최신 업데이트</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Claude Code · 최신 업데이트</em></p>
 
 # Claude Code는 요즘 <em>오케스트레이션</em>으로 넓어졌다
 
@@ -245,25 +245,25 @@ class: claude
 class: codex
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Codex</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Codex</em></p>
 
-# <em>Codex</em> — 클라우드에 위임하고, 리뷰까지 맡긴다
+# Codex — <em>ChatGPT에 올라탄, 클라우드에 강한 에이전트</em>
+
+<p class="thesis">OpenAI의 코딩 에이전트. ChatGPT 플랜에 포함돼 가장 빠르게 퍼졌다(주간 활성 500만+). 클라우드 위임과 코드 리뷰가 특히 잘 다듬어져 있다.</p>
 
 <div class="deflist">
-<div><b>클라우드 위임</b><span>긴 작업을 격리된 클라우드 샌드박스로 보내 <b>백그라운드·병렬</b> 실행 → diff/PR로 회수</span></div>
-<div><b>코드 리뷰</b><span>커밋 전 별도 Codex 에이전트가 리뷰 — OpenAI 사내 리뷰의 대다수를 담당</span></div>
-<div><b>ChatGPT 통합</b><span>Plus/Pro/Business 플랜에 포함 → 가장 빠른 확산(주간 활성 500만+)</span></div>
-<div><b>worktree 병렬</b><span>여러 작업을 동시에, 일관된 코드 스타일로</span></div>
-<div><b>GitHub <code>@codex</code></b><span>이슈·PR에서 멘션으로 작업 생성</span></div>
+<div><b>클라우드 위임</b><span>격리된 클라우드에 비동기·병렬로 보내 diff/PR로 회수 — Claude는 「Claude Code on web」, Antigravity는 「Managed Agents」</span></div>
+<div><b>코드 리뷰</b><span>GitHub <code>@codex review</code> PR 봇 + CLI <code>/review</code> — Claude의 <code>/code-review</code>에 해당</span></div>
+<div><b>되돌리기는 없음</b><span>Claude의 Checkpoints(<code>/rewind</code>) 같은 기능이 <em class="warn">아직 없다</em></span></div>
 </div>
 
-<p class="note"><b>커뮤니티</b> 개발자 평 — <em>「가장 극적인 개선은 안정성. 1년 전엔 거칠었는데 지금은 워크플로의 핵심」</em>(zackproser, 2026).</p>
+<p class="note"><b>커뮤니티</b> 개발자 평 — <em>「가장 극적인 개선은 안정성. 지금은 워크플로의 핵심」</em>(zackproser, 2026).</p>
 
 ---
 class: codex
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Codex · 최신 업데이트</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Codex · 최신 업데이트</em></p>
 
 # Codex는 이제 <em>모바일까지</em> 한 흐름으로 잇는다
 
@@ -290,17 +290,16 @@ class: codex
 class: antigravity
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Antigravity</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Antigravity</em></p>
 
-# <em>Antigravity</em> — 에이전트를 관제하고, 스스로 검증시킨다
+# Antigravity — <em>에이전트를 관제하고, 영상으로 검증시킨다</em>
 
 <div class="split evidence">
 <div>
 <div class="deflist narrow">
-<div><b>Agent Manager</b><span>여러 에이전트를 동시에 띄워 관찰·지휘하는 관제소(Mission Control)</span></div>
-<div><b>Artifacts</b><span>Task List·계획·Walkthrough(스크린샷·녹화)로 작업을 <b>검증 가능한 산출물</b>로</span></div>
-<div><b>브라우저 자율 검증</b><span>앱을 직접 띄워 클릭·스크린샷으로 자기 변경을 확인</span></div>
-<div><b>코멘트 협업</b><span>Google Docs처럼 산출물에 코멘트 → 에이전트가 반영</span></div>
+<div><b>Agent Manager</b><span>여러 에이전트를 한 화면에서 병렬 관제 — Claude의 Agent view, Codex의 Task 사이드바에 해당(가장 first-class)</span></div>
+<div><b>브라우저 Walkthrough</b><span><em>여기는 고유</em> — 앱을 직접 띄워 클릭·녹화로 검증 <b>영상</b>까지 자동 생성</span></div>
+<div><b>모바일 원격은 없음</b><span>Claude·Codex와 달리 공식 미지원 — 출시 7개월차</span></div>
 </div>
 </div>
 <div>
@@ -312,6 +311,28 @@ class: antigravity
 </div>
 
 <p class="refs">출처 · <a href="https://antigravity.google" target="_blank">antigravity.google</a> · <a href="https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/" target="_blank">Google Developers Blog</a></p>
+
+---
+class: compact-table
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>같은 기능, 다른 이름</em></p>
+
+# 대부분은 <em>같은 기능, 이름만 다르다</em>
+
+| 기능 | Claude Code | Codex | Antigravity | 고유 |
+|---|---|---|---|---|
+| 영속 지침 | CLAUDE.md | AGENTS.md | AGENTS.md | 공통 |
+| 스킬(워크플로우) | Skills | Agent Skills | Skills | 공통 |
+| 보조 에이전트 | Subagents | Subagents | Agent Manager | 공통 |
+| 외부 도구 | MCP | MCP | MCP | 공통 |
+| 자동화 훅 | Hooks | Hooks | SDK 훅 | 공통 |
+| 클라우드 위임 | Claude Code on web | Codex Cloud | Managed Agents | 공통 |
+| 되돌리기 | Checkpoints `/rewind` | <em class="bad">없음</em> | 불안정 | <span class="t-claude">Claude</span> |
+| 모바일 원격 | Remote Control | Remote | <em class="bad">없음</em> | <span class="t-claude">Claude</span>·<span class="t-codex">Codex</span> |
+| 브라우저 검증 영상 | Preview | 인앱 브라우저 | Walkthrough 영상 | <span class="t-anti">Antigravity</span> |
+
+<p class="note"><b>그래서</b> 「이건 ○○만의 기능」이라 할 수 있는 건 많지 않다. 진짜 갈리는 셋 — <span class="t-claude">Claude의 되돌리기·모바일</span>, <span class="t-anti">Antigravity의 검증 영상</span>.</p>
 
 ---
 class: divider
@@ -436,7 +457,7 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 # 세 앱 모두 데스크탑이 있다. <em>방점만 다르다</em>
 
 <div class="trio">
-<div class="pane key" style="border-color:var(--claude)"><h3><span class="latin" style="color:var(--claude)">CLAUDE CODE</span>Mac · Win</h3><p>Chat·Cowork·Code 탭. worktree 격리 세션, diff 인라인 코멘트, 내장 브라우저로 <b>자동 검증</b>(autoVerify).</p></div>
+<div class="pane key" style="border-color:var(--claude)"><h3><span class="latin" style="color:var(--claude)">CLAUDE CODE</span>Mac · Win</h3><p>Chat·Cowork·Code 탭. worktree 격리 세션, diff 인라인 코멘트, <b>Preview</b>로 변경을 직접 확인.</p></div>
 <div class="pane key" style="border-color:var(--codex)"><h3><span class="latin" style="color:var(--codex)">CODEX</span>Mac · Win</h3><p>「커맨드 센터」 — 멀티 프로젝트, Local/Worktree/<b>Cloud</b> 모드, Task 사이드바, Artifact 뷰어, 통합 터미널.</p></div>
 <div class="pane key" style="border-color:var(--antigravity)"><h3><span class="latin" style="color:var(--antigravity)">ANTIGRAVITY</span>Mac · Win · Linux</h3><p>Editor + <b>Agent Manager</b> 두 표면. 자율 검증 walkthrough가 기본. VS Code 포크.</p></div>
 </div>
@@ -497,11 +518,11 @@ class: divider claude
 
 <p class="div-no">05</p>
 
-## 단순 채팅을 넘어서 — 그리고 시연
+## 단순 채팅을 넘어서 — 핸즈온
 
-<p class="div-sub">대부분은 챗봇처럼 쓴다. 진짜 가치는 스킬·서브에이전트·워크플로우에서 나온다</p>
+<p class="div-sub">대부분은 챗봇처럼 쓴다. 직접 시켜 보면 차이가 분명해진다</p>
 
-<p class="div-file">실전 활용 · 라이브 데모</p>
+<p class="div-file">실전 활용 · 따라하기</p>
 
 ---
 
@@ -518,61 +539,36 @@ class: divider claude
 <p class="quote">대부분은 Claude Code를 챗봇처럼 쓰고는 화요일이면 다 잊었다고 한다. 조용히 워크플로우를 만드는 쪽은 스킬·메모리·MCP로 <em>제2의 뇌</em>를 붙인다. <span class="who">— 커뮤니티 관찰 (X, 2026.06 · last30days)</span></p>
 
 ---
-
-# 이 발표 자료부터가, <em>Claude Code가 만든 것</em>이다
-
-<div class="steps">
-<div><b>스킬 호출</b><span><code>/slidev-deck-builder</code> — 7,000줄 CSS를 매번 짜지 않고 검증된 키트로 시작</span></div>
-<div><b>서브에이전트 4개 병렬 리서치</b><span>Claude·Codex·Antigravity 공식문서·changelog + 설문·커뮤니티를 동시에 조사</span></div>
-<div><b>공식 이미지 취합</b><span>각 문서의 스크린샷 URL을 받아 <code>images/</code>로 — 슬라이드에 실제 화면 삽입</span></div>
-<div><b>캡처 → 대조 → 수정 루프</b><span><code>pnpm qa</code>로 슬라이드별 라이트·다크 캡처, overflow·대비를 자동 감사</span></div>
-<div><b>GitHub Pages 배포</b><span>빌드 → gh-pages 푸시 → 라이브 URL을 다시 캡처해 검증</span></div>
-</div>
-
-<p class="note"><b>단순 채팅과 다른 점</b> 스킬(절차) · 서브에이전트(병렬 조사) · 도구(캡처·빌드·배포)를 묶어 <em>한 번의 의뢰로 끝까지</em> 갔다.</p>
-
+class: claude
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>데모 — 검증 루프</em></p>
+# 직접 해보기 — <em>한 줄로 시키고, 에이전트가 돌려본다</em>
 
-# <em>검증 루프</em>가 34장을 모두 훑고 고쳤다
+```text
+더치페이 계산기 1인당이 늘 ₩0이야. 원인을 찾아 고치고, 브라우저로 직접 열어 값까지 확인해줘.
+```
 
-<p class="thesis">에이전트는 마크다운만 쓰고 끝내지 않았다. 매 슬라이드를 렌더링해 캡처하고, 하단 넘침·코드칩 대비·밀도를 자동 감사한 뒤 고쳤다.</p>
+<div class="steps">
+<div><b>읽기 (Read)</b><span>스크립트를 읽고 원인 파악 — <code>total</code>이 0으로 고정돼 있었다</span></div>
+<div><b>고치기 (Edit)</b><span><code>total = bill × (1 + tip/100)</code> 으로 수정</span></div>
+<div><b>직접 실행</b><span>브라우저로 페이지를 열어 80,000 · 10% · 4명 입력</span></div>
+<div><b>스스로 검증</b><span>1인당 <code>₩22,000</code> 확인 → 통과 후 완료</span></div>
+</div>
 
-<figure class="shot wide">
-<img src="./images/qa-montage.png" alt="이 발표 34장을 캡처한 QA 콘택트시트" />
-<figcaption>slidev QA 콘택트시트 — 이 발표의 34장을 실제로 캡처·감사한 산출물</figcaption>
-</figure>
-
-<p class="note"><b>이게 단순 채팅과 다르다</b> 모델이 자기 결과물을 <em>스스로 렌더링해 보고 고치는</em> 루프 — 사람이 캡처를 일일이 확인하지 않아도 된다.</p>
+<p class="note"><b>여기서 챗봇과 갈린다</b> 코드만 주는 게 아니라 <em>직접 실행해 결과까지 확인</em>한다.</p>
 
 ---
 class: claude
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>데모 — 작동하는 산출물</em></p>
+# 고치기 전과 후 — <em>실제로 작동한다</em>
 
-# <em>작동하는 인터랙티브 탐색기</em>도 그 자리에서
-
-<div class="split evidence">
-<div>
-<p class="thesis">설명용 정적 이미지가 아니라, 의뢰 한 번으로 만든 <b>실제 동작하는 웹 앱</b>입니다. 탭으로 지표를 바꾸고, 행을 눌러 강조하고, 용도를 고르면 추천이 바뀝니다.</p>
-
-<div class="deflist narrow">
-<div><b>인라인 제작</b><span>바닐라 HTML/JS, 의존성 0 — 덱과 동일한 색·타이포</span></div>
-<div><b>동작 검증</b><span>Playwright로 클릭·전환·강조를 자동 확인(콘솔 에러 0)</span></div>
-<div><b>라이브 배포</b><span>같은 사이트에 함께 — 발표 중 직접 눌러볼 수 있음</span></div>
-</div>
-
-<p class="refs">▶ cozytk.github.io/code-agents/demo.html</p>
-</div>
-<div>
-<figure class="shot wide">
-<img src="./images/demo-explorer.png" alt="코드 에이전트 데이터 탐색기 — 인터랙티브 데모" />
-<figcaption>Claude Code가 즉석 제작·검증·배포한 인터랙티브 탐색기</figcaption>
+<figure class="figure">
+<img src="./images/handson-ba.png" alt="수정 전 1인당 ₩0 → 수정 후 ₩22,000" style="max-width:880px;border:1px solid var(--rule);border-radius:10px" />
+<figcaption>같은 입력(8만 원 · 팁 10% · 4명)에서 ₩0 → ₩22,000 — 에이전트가 직접 열어 확인한 값</figcaption>
 </figure>
-</div>
-</div>
+
+<p class="note"><b>직접 눌러보세요</b> 결과물은 라이브로 배포돼 있습니다 — <a href="https://cozytk.github.io/code-agents/handson.html" target="_blank">cozytk.github.io/code-agents/handson.html</a>. 같은 프롬프트면 누구나 재현합니다.</p>
 
 ---
 class: divider
@@ -629,7 +625,7 @@ class: antigravity
 
 | 항목 | Claude Code | Codex | Antigravity |
 |---|---|---|---|
-| 강한 곳 | 신뢰성·긴 자율작업·스킬 | 클라우드 위임·코드 리뷰 | 속도·멀티에이전트·관제 |
+| 강한 곳 | 신뢰성·되돌리기·긴 자율작업 | 클라우드 위임·코드 리뷰 | 검증 영상·멀티에이전트 관제 |
 | 기본 모델 | Opus 4.8 | GPT-5.5 계열 | Gemini 3 Pro |
 | 성숙도 | 높음 (ARR $1B+) | 높음 (주간 5M+) | 초기 (2025.11~) |
 | 지금 추천 | 복잡·중요 작업 | 클라우드·대규모 위임 | 실험·미래 대비 |
