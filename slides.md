@@ -190,9 +190,9 @@ class: divider codex
 
 <p class="div-no">02</p>
 
-## 각 에이전트와 그 기능 — 대부분은 이름만 다르다
+## 각 에이전트의 특징 — 그리고 같은 기능, 다른 이름
 
-<p class="div-sub">Claude Code·Codex를 소개하고, 같은 기능을 다른 도구는 뭐라 부르는지 짚는다</p>
+<p class="div-sub">Claude Code·Codex를 소개하고, 무엇이 진짜 다른지·무엇이 이름만 다른지 가른다</p>
 
 <p class="div-file">Claude Code · Codex · Antigravity</p>
 
@@ -200,35 +200,34 @@ class: divider codex
 class: claude
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Claude Code</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>특징</span><em>Claude Code</em></p>
 
-# Claude Code — <em>터미널 태생, 끝까지 파고드는 에이전트</em>
-
-<p class="thesis">Anthropic의 코딩 에이전트. 긴 자율 작업과 신뢰성으로 복잡·중요한 일에 강하다. 기능 대부분은 다른 도구에도 있지만, 하나는 아직 고유하다.</p>
+# Claude Code — <em>최고 모델 위에서, 가장 오래 다듬은 제품</em>
 
 <div class="deflist">
-<div><b>하네스 묶음</b><span>Skills·Subagents·Hooks·MCP로 확장한다 — <em>이 묶음은 Codex·Antigravity에도 있다(이름만 다름)</em></span></div>
-<div><b>Checkpoints <code>/rewind</code></b><span>프롬프트마다 자동 스냅샷·되돌리기 — <em>여기는 고유</em>. Codex엔 없고, Antigravity는 불안정</span></div>
-<div><b>긴 자율 작업</b><span>한 지시로 수십 분~수 시간, 중간에 멈춰 세워 방향을 틀 수 있다</span></div>
+<div><b>모델 우위</b><span>Opus 4.8가 SWE-bench Verified 88.6%로 공개 최고 — <em>「코딩 LLM은 Anthropic이 제일 인상적이고, Claude Code가 그걸 가장 많이 짜낸다」</em>(XDA)</span></div>
+<div><b>가장 먼저 나왔다</b><span>2025.02 리서치 프리뷰로 시장 최초 — Codex보다 ~3개월, Antigravity보다 ~9개월 앞섰다</span></div>
+<div><b>가장 성숙하다</b><span>GA 후 ~6개월 만에 ARR $1B(ChatGPT도 못 한 속도) · <em>「오늘날 가장 즐겁게 쓰는 에이전트」</em>(MinusX)</span></div>
+<div><b>고유 기능</b><span>Checkpoints <code>/rewind</code> — 프롬프트마다 자동 되돌리기. Codex엔 없고, Antigravity는 불안정</span></div>
 </div>
 
-<p class="note"><b>커뮤니티</b> HN "What makes Claude Code so damn good" — <em>「여러 파일에 걸친 코드를 읽고 고치는 데 가장 똑똑하다」</em>.</p>
+<p class="refs">출처 · <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank">Anthropic Opus 4.8</a> · <a href="https://aiagentindex.mit.edu/2025/claude-code/" target="_blank">MIT AI Agent Index</a> · XDA · MinusX</p>
 
 ---
 class: claude
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Claude Code · 최신 업데이트</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>특징</span><em>Claude Code · 최신 업데이트</em></p>
 
 # Claude Code는 요즘 <em>오케스트레이션</em>으로 넓어졌다
 
 <div class="split evidence">
 <div>
 <div class="timeline">
-<div><b>Opus 4.8 기본 모델화</b><span>SWE-bench 88.6% 보고 · Fast mode로 같은 품질 ~2.5배 속도</span></div>
-<div><b>Dynamic workflows</b><span><code>ultracode</code> — 수십~수백 서브에이전트를 스크립트로 오케스트레이션</span></div>
-<div><b>Agent view</b><span><code>claude agents</code> — 모든 세션을 한 화면에서(작업중·입력대기·완료)</span></div>
-<div><b>/ultrareview · /goal</b><span>클라우드 멀티에이전트 버그 헌팅 · 조건 충족까지 자동 반복</span></div>
+<div><b>Opus 4.8 기본 모델</b><span>SWE-bench Verified 88.6% · Fast mode 같은 품질 ~2.5배</span></div>
+<div><b>Dynamic workflows</b><span><code>ultracode</code> — 수십~수백 에이전트 팬아웃, <em>토큰을 가장 많이 쓰는 패턴</em></span></div>
+<div><b>딥 코드 리뷰</b><span><code>/code-review ultra</code> — 클라우드 리뷰어 fleet + 재현·검증</span></div>
+<div><b>Agent view</b><span><code>claude agents</code> — CLI 멀티세션, 데스크탑은 사이드바로 이미 제공</span></div>
 </div>
 </div>
 <div>
@@ -239,13 +238,15 @@ class: claude
 </div>
 </div>
 
-<p class="refs">출처 · <a href="https://code.claude.com/docs/en/whats-new" target="_blank">code.claude.com — What's new</a> · <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank">Anthropic 뉴스</a></p>
+<p class="note"><b>딥 코드 리뷰가 다른 점</b> 한 에이전트가 찾은 버그를 <em>다른 에이전트가 재현해야</em> 통과 — 스타일 지적이 아닌 진짜 버그만. 5~10분 백그라운드, 무료 3회 후 회당 $5~20.</p>
+
+<p class="refs">출처 · <a href="https://code.claude.com/docs/en/whats-new" target="_blank">code.claude.com — What's new</a> · <a href="https://code.claude.com/docs/en/code-review" target="_blank">code-review</a></p>
 
 ---
 class: codex
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Codex</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>특징</span><em>Codex</em></p>
 
 # Codex — <em>ChatGPT에 올라탄, 클라우드에 강한 에이전트</em>
 
@@ -263,7 +264,7 @@ class: codex
 class: codex
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Codex · 최신 업데이트</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>특징</span><em>Codex · 최신 업데이트</em></p>
 
 # Codex는 이제 <em>모바일까지</em> 한 흐름으로 잇는다
 
@@ -290,7 +291,7 @@ class: codex
 class: antigravity
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>Antigravity</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>특징</span><em>Antigravity</em></p>
 
 # Antigravity — <em>에이전트를 관제하고, 영상으로 검증시킨다</em>
 
@@ -316,7 +317,7 @@ class: antigravity
 class: compact-table
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>에이전트 이해</span><em>같은 기능, 다른 이름</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>특징</span><em>같은 기능, 다른 이름</em></p>
 
 # 대부분은 <em>같은 기능, 이름만 다르다</em>
 
@@ -518,11 +519,11 @@ class: divider claude
 
 <p class="div-no">05</p>
 
-## 단순 채팅을 넘어서 — 핸즈온
+## 실전 — 에이전트를 잘 쓰는 법
 
-<p class="div-sub">대부분은 챗봇처럼 쓴다. 직접 시켜 보면 차이가 분명해진다</p>
+<p class="div-sub">도구를 더 똑똑하게(Skills·MCP), 길게 잘 돌리기, 그리고 Claude Code답게</p>
 
-<p class="div-file">실전 활용 · 따라하기</p>
+<p class="div-file">Skills · MCP · 효과적 사용 · 시연</p>
 
 ---
 
@@ -539,36 +540,148 @@ class: divider claude
 <p class="quote">대부분은 Claude Code를 챗봇처럼 쓰고는 화요일이면 다 잊었다고 한다. 조용히 워크플로우를 만드는 쪽은 스킬·메모리·MCP로 <em>제2의 뇌</em>를 붙인다. <span class="who">— 커뮤니티 관찰 (X, 2026.06 · last30days)</span></p>
 
 ---
-class: claude
----
 
-# 직접 해보기 — <em>한 줄로 시키고, 에이전트가 돌려본다</em>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>도구를 더 똑똑하게</em></p>
 
-```text
-더치페이 계산기 1인당이 늘 ₩0이야. 원인을 찾아 고치고, 브라우저로 직접 열어 값까지 확인해줘.
-```
+# 에이전트도 <em>도구</em>다 — Tool·MCP·Skill로 더 잘하게
 
-<div class="steps">
-<div><b>읽기 (Read)</b><span>스크립트를 읽고 원인 파악 — <code>total</code>이 0으로 고정돼 있었다</span></div>
-<div><b>고치기 (Edit)</b><span><code>total = bill × (1 + tip/100)</code> 으로 수정</span></div>
-<div><b>직접 실행</b><span>브라우저로 페이지를 열어 80,000 · 10% · 4명 입력</span></div>
-<div><b>스스로 검증</b><span>1인당 <code>₩22,000</code> 확인 → 통과 후 완료</span></div>
+<div class="trio">
+<div class="pane"><h3><span class="latin">내장 TOOL</span>손발</h3><p>Read·Edit·Bash·웹검색 — 에이전트가 기본으로 하는 동작.</p></div>
+<div class="pane key"><h3><span class="latin">MCP</span>접근 · 무엇에</h3><p>모델이 못 닿는 외부 시스템(DB·Jira·Slack)에 표준으로 연결.</p></div>
+<div class="pane key"><h3><span class="latin">SKILL</span>노하우 · 어떻게</h3><p>반복 절차·지식을 패키지로 묶어 필요할 때만 로드.</p></div>
 </div>
 
-<p class="note"><b>여기서 챗봇과 갈린다</b> 코드만 주는 게 아니라 <em>직접 실행해 결과까지 확인</em>한다.</p>
+<p class="note"><b>한 줄 구분</b> <em>Skill은 워크플로(어떻게), MCP는 접근(무엇에)</em> — Skill은 훈련, MCP는 출입증.</p>
+
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>MCP — 닿을 수 없던 곳에</em></p>
+
+# MCP — 복붙하던 걸, <em>에이전트가 직접 읽고 처리</em>
+
+<div class="vs">
+<div class="pane"><h3>MCP 없을 때</h3><p>이슈 트래커·DB·대시보드 데이터를 <em class="bad">손으로 복붙</em>해 채팅에. 연결마다 일회성 커넥터.</p></div>
+<i class="vs-badge">→</i>
+<div class="pane key"><h3>MCP 붙이면</h3><p>Jira·Sentry·PostgreSQL을 도구로 노출 → 직접 읽고 <em>실행(PR·이슈 생성)</em>까지.</p></div>
+</div>
+
+```text
+Jira ENG-4521 기능 구현하고 GitHub에 PR 올려줘.   ← 복붙 없이 바로
+```
+
+<p class="note"><b>MCP의 진짜 고유점</b> <em>개방 표준</em>이라 한 번 만든 커넥터를 Claude Code·Codex·Cursor가 다 공유 + OAuth 권한 경계. 스킬 스크립트로 API는 부르지만 표준·공유·인증이 빠진다.</p>
+
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>Skill — 매번 안 가르치게</em></p>
+
+# Skill — 매번 붙여넣던 <em>절차를 패키지로</em>
+
+<div class="vs">
+<div class="pane"><h3>Skill 없을 때</h3><p>같은 체크리스트·다단계 절차를 <em class="bad">매번 복붙</em>. 다 넣자니 컨텍스트를 늘 잡아먹는다.</p></div>
+<i class="vs-badge">→</i>
+<div class="pane key"><h3>Skill 만들면</h3><p><code>SKILL.md</code>에 절차+스크립트를 묶으면 <em>필요할 때만</em> 로드. <code>/deploy</code>처럼 호출.</p></div>
+</div>
+
+<p class="note"><b>Skill의 진짜 고유점</b> <em>점진 공개</em> — 이름·설명만 평소 상주(컨텍스트 ~1%), 관련될 때만 본문·스크립트 로드. 100개 깔아도 안 쓰면 거의 공짜. 스크립트는 생성이 아니라 <em>실행</em>이라 안정적.</p>
+
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>언제 무엇을 · 프롬프트</em></p>
+
+# 언제 MCP, 언제 Skill — 그리고 <em>어떻게 부르나</em>
+
+<div class="deflist">
+<div><b>MCP를 쓴다</b><span>살아있는 외부 시스템에 닿을 때 — 우리 DB·Jira·Sentry·사내 API. "외부의 무엇에"</span></div>
+<div><b>Skill을 쓴다</b><span>반복 절차·노하우를 담을 때 — 배포 순서·PDF 처리·사내 분석 규칙. "이 문제를 어떻게"</span></div>
+<div><b>같이 쓴다</b><span>Skill이 워크플로를 담고 그 안에서 MCP 도구를 호출 — 대체가 아니라 보완</span></div>
+</div>
+
+<p class="note"><b>이해가 프롬프트를 바꾼다</b> 갖춰 두면 — <em>"우리 Jira의 이 이슈 구현해줘"</em>, <em>"/deploy 스킬로 스테이징에 올려줘"</em>처럼 도구 이름만 부르면 된다.</p>
 
 ---
 class: claude
 ---
 
-# 고치기 전과 후 — <em>실제로 작동한다</em>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>오래 잘 돌리기</em></p>
 
-<figure class="figure">
-<img src="./images/handson-ba.png" alt="수정 전 1인당 ₩0 → 수정 후 ₩22,000" style="max-width:880px;border:1px solid var(--rule);border-radius:10px" />
-<figcaption>같은 입력(8만 원 · 팁 10% · 4명)에서 ₩0 → ₩22,000 — 에이전트가 직접 열어 확인한 값</figcaption>
+# 오래 잘 돌리는 법 — <em>계획 → 검증 → /goal</em>
+
+<div class="steps">
+<div><b>먼저 계획 (Shift+Tab · /plan)</b><span>읽고 탐색만, 편집 전에 접근법부터. "이 기능 어떻게 넣을지 계획부터 세워줘"</span></div>
+<div><b>검증을 프롬프트에 박기</b><span>합·불 신호를 줘야 루프가 닫힌다. "구현하고 <code>npm test</code> 돌려서 통과까지 확인해줘"</span></div>
+<div><b>/goal로 자동 반복</b><span>조건 충족까지 매 턴 끝에 작은 모델이 평가 → 알아서 계속. <code>/goal test/auth 전부 통과·lint 깨끗 · 20턴 후 중단</code></span></div>
+<div><b>특화 Skill·MCP로 마무리</b><span>반복은 스킬, 외부는 MCP. 끝나면 <code>/code-review</code>로 점검</span></div>
+</div>
+
+<p class="note"><b>좋은 조건의 3요소</b> 측정 가능한 종료상태 + 증명 방법(<em>"npm test exits 0"</em>) + 무한루프 방지(<em>"or stop after N turns"</em>).</p>
+
+---
+class: claude
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>도중에 끼어들기</em></p>
+
+# 돌아가는 중에 — <em>멈추고, 고치고, 되감기</em>
+
+<div class="deflist">
+<div><b>지시를 빠뜨렸다</b><span>멈추지 말고 <em>그냥 타이핑 + Enter</em> — 큐에 쌓였다 다음 단계에서 반영. 곁질문은 <code>/btw</code></span></div>
+<div><b>의도와 다르게 간다</b><span><code>Esc</code> 한 번 — 즉시 멈춤(지금까지 한 건 보존). 바로 방향을 다시 준다</span></div>
+<div><b>이미 잘못 고쳤다</b><span><code>Esc</code> 두 번 또는 <code>/rewind</code> — 체크포인트로 되돌리기(코드·대화 선택)</span></div>
+<div><b>데스크탑이라면</b><span>stop 버튼/<code>Esc</code>로 중단, 또는 교정을 입력하고 Enter — 멈추지 않고 방향 전환</span></div>
+</div>
+
+<p class="note"><b>체감 포인트</b> 잘못 가도 괜찮다 — <em>Esc로 멈추고, Esc Esc로 되감으면</em> 된다. 같은 걸 두 번 넘게 고쳤으면 <code>/clear</code> 후 더 구체적으로 새로 시작.</p>
+
+---
+class: claude
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>시연 · Claude Code다움</em></p>
+
+# Antigravity에서 넘어오면 — <em>비슷한 것, 다른 것</em>
+
+<div class="split evidence">
+<div>
+<div class="deflist narrow">
+<div><b>비슷하다</b><span>에이전트 패널, 계획 먼저, diff 보고 승인 — 큰 흐름은 같다</span></div>
+<div><b>Claude답다 ①</b><span><code>/</code> 하나로 <code>/code-review</code>·<code>/security-review</code>·<code>/goal</code>·설치한 스킬을 부른다</span></div>
+<div><b>Claude답다 ②</b><span><code>/rewind</code> 체크포인트로 언제든 되돌리기 — Codex엔 없는 안전망</span></div>
+</div>
+</div>
+<div>
+<figure class="shot">
+<img src="./images/cc-slash-palette.png" alt="Claude Code 슬래시 명령 팔레트" />
+<figcaption><code>/</code> 만 치면 — 자주 쓰는 명령과 스킬이 한자리에</figcaption>
 </figure>
+</div>
+</div>
 
-<p class="note"><b>직접 눌러보세요</b> 결과물은 라이브로 배포돼 있습니다 — <a href="https://cozytk.github.io/code-agents/handson.html" target="_blank">cozytk.github.io/code-agents/handson.html</a>. 같은 프롬프트면 누구나 재현합니다.</p>
+---
+class: claude
+---
+
+<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>시연 · 만들어 보기</em></p>
+
+# 그 흐름으로 직접 — <em>비밀번호 강도 측정기</em>
+
+<div class="split evidence">
+<div>
+<div class="steps">
+<div><b>/plan</b><span>"실시간 강도 측정기 만들 계획부터" — 편집 전 접근법 확인</span></div>
+<div><b>구현 + 직접 확인</b><span>만들고 브라우저로 열어 입력마다 강도가 바뀌는지 검증</span></div>
+<div><b>/code-review</b><span>빈 값·점수 매핑 같은 빈틈을 마지막으로 점검</span></div>
+</div>
+
+<p class="refs">▶ cozytk.github.io/code-agents/handson.html</p>
+</div>
+<div>
+<figure class="shot">
+<img src="./images/handson-pw.png" alt="비밀번호 강도 측정기 — 아주 강함" />
+<figcaption>실제 작동하는 결과 · 라이브 배포</figcaption>
+</figure>
+</div>
+</div>
 
 ---
 class: divider
@@ -613,7 +726,7 @@ class: antigravity
 <div><b>운영</b><span>예고 없는 쿼터 4회 삭감 · SOC2/거버넌스 문서화 미비</span></div>
 </div>
 
-<p class="note"><b>균형 있게</b> 잠재력은 분명하다 — 속도·멀티에이전트 오케스트레이션은 강점. 다만 <em>「신뢰성이 중요한 환경이라면 지금은 Claude Code」</em>(The New Stack, 2026).</p>
+<p class="note"><b>균형 있게</b> 잠재력은 분명하다 — 속도·멀티에이전트 오케스트레이션은 강점. 다만 출시 7개월차라 <em>검증 기간이 짧다</em> — 짧은 시장 이력은 곧 실사용 근거 부족(DataCamp).</p>
 
 <p class="refs">출처 · <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/" target="_blank">The New Stack</a> · <a href="https://www.datacamp.com/blog/claude-code-vs-antigravity" target="_blank">DataCamp</a> · <a href="https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data" target="_blank">PromptArmor</a></p>
 
