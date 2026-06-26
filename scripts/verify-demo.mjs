@@ -47,7 +47,7 @@ await browser.close();
 const sweClaudeWide = parseFloat(sweClaudeW) > 78;
 console.log('SWE Claude fill width:', sweClaudeW, sweClaudeWide ? '✓' : '✗');
 console.log('성숙도 Claude 값:', matureClaude, matureClaude === '16개월' ? '✓' : '✗');
-console.log('Terminal Codex 값:', termCodex, termCodex === '77.3%' ? '✓' : '✗');
+console.log('Terminal Codex 값:', termCodex, termCodex === '82.7%' ? '✓' : '✗');
 console.log('행 클릭 강조(Claude dim):', claudeDimmed ? '✓' : '✗');
 console.log('추천 칩(클라우드→codex):', recoClass, recoClass.includes('codex') ? '✓' : '✗');
 console.log('콘솔 에러:', errors.length);

@@ -102,14 +102,14 @@
 <script>
   const DATA = {
     swe:    {name:'<b>SWE-bench Verified</b> — 실제 GitHub 이슈 해결률 (%)', max:100, unit:'%',
-             src:'출처 · Anthropic Opus 4.5 · OpenAI GPT-5.1 · Google Gemini 3 Pro (2025.11)',
-             v:{claude:80.9, codex:76.3, anti:76.2}},
+             src:'Opus 4.8 공식 88.6 · GPT-5.5 커뮤니티 추정 · Gemini 3 Pro 공식 76.2 — 포화로 OpenAI는 2026.2 폐기',
+             v:{claude:88.6, codex:88.0, anti:76.2}},
     mature: {name:'<b>성숙도</b> — 첫 공개 후 경과 (개월, 2026.06 기준)', max:18, unit:'mo',
              src:'출처 · Claude Code 2025.02 · Codex 2025.05 · Antigravity 2025.11',
              v:{claude:16, codex:13, anti:7}},
-    terminal:{name:'<b>Terminal-Bench</b> — 터미널·도구 사용 능력 (%)', max:100, unit:'%',
-             src:'출처 · 모델별 보고치 · GPT-5.3-Codex 77.3 · Opus 4.5 59.3 · Gemini 3 Pro 54.2',
-             v:{claude:59.3, codex:77.3, anti:54.2}},
+    terminal:{name:'<b>Terminal-Bench 2.0</b> — 터미널·도구 사용 능력 (%)', max:100, unit:'%',
+             src:'모델별 보고치 · GPT-5.5 82.7 · Opus 4.x 59.3 · Gemini 3 Pro 54.2',
+             v:{claude:59.3, codex:82.7, anti:54.2}},
   };
   const RECO = {
     reliable:{p:'claude', t:'<b>Claude Code</b> — 신뢰성과 긴 자율 작업, 스킬·서브에이전트로 복잡·중요한 작업에 강합니다.'},

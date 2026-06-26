@@ -67,7 +67,7 @@ layout: center
 
 <div class="trio">
 <div class="pane key" style="border-color:var(--claude)"><h3><span class="latin" style="color:var(--claude)">ANTHROPIC</span>Claude&nbsp;Code</h3><p>터미널 태생의 에이전트. 스킬·서브에이전트·긴 자율 작업으로 <b>신뢰성</b>이 강점. 기본 모델 Opus 4.8.</p></div>
-<div class="pane key" style="border-color:var(--codex)"><h3><span class="latin" style="color:var(--codex)">OPENAI</span>Codex</h3><p>ChatGPT에 통합된 에이전트. <b>클라우드 위임·코드 리뷰</b>가 강점. GPT-5-Codex 계열.</p></div>
+<div class="pane key" style="border-color:var(--codex)"><h3><span class="latin" style="color:var(--codex)">OPENAI</span>Codex</h3><p>ChatGPT에 통합된 에이전트. <b>클라우드 위임·코드 리뷰</b>가 강점. GPT-5.5 계열.</p></div>
 <div class="pane key" style="border-color:var(--antigravity)"><h3><span class="latin" style="color:var(--antigravity)">GOOGLE</span>Antigravity</h3><p>에이전트 우선 IDE. <b>Agent Manager·자율 검증</b>이 강점. Gemini 3 Pro. 2025.11 공개.</p></div>
 </div>
 
@@ -81,7 +81,7 @@ class: divider
 
 ## 공통점 — 셋 다 충분히 강하다
 
-<p class="div-sub">먼저 묶어서: 성능·생산성·기본 능력은 이미 「충분」의 영역에 들어섰다</p>
+<p class="div-sub">성능·생산성·기본기는 이미 충분한 수준에 올라섰다</p>
 
 <p class="div-file">정량 근거 · 벤치마크 · 설문</p>
 
@@ -89,31 +89,37 @@ class: divider
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>공통점</span><em>성능 — 벤치마크</em></p>
 
-# 실전 코딩 벤치마크에서, <em>셋 다 76% 이상</em>
+# 2년 만에 <em>33% → 89%</em>, 벤치마크가 천장에 닿았다
 
 <figure class="figure">
-<svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SWE-bench Verified 점수 막대그래프: Claude Opus 4.5 80.9퍼센트, GPT-5.1 76.3퍼센트, Gemini 3 Pro 76.2퍼센트">
-  <line x1="150" y1="20" x2="150" y2="210" style="stroke:var(--rule);stroke-width:1.5"/>
-  <line x1="150" y1="40" x2="720" y2="40" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 5"/>
-  <text x="724" y="44" style="font-size:11px;font-family:var(--mono);fill:var(--dim)">80%</text>
-  <text x="140" y="57" text-anchor="end" style="font-size:13px;font-family:var(--mono);fill:var(--ink)">Claude Code</text>
-  <text x="140" y="72" text-anchor="end" style="font-size:10.5px;font-family:var(--mono);fill:var(--dim)">Opus 4.5</text>
-  <rect x="150" y="48" width="486" height="26" rx="4" style="fill:var(--claude)"/>
-  <text x="646" y="67" style="font-size:14px;font-family:var(--display);font-weight:700;fill:var(--claude)">80.9%</text>
-  <text x="140" y="117" text-anchor="end" style="font-size:13px;font-family:var(--mono);fill:var(--ink)">Codex</text>
-  <text x="140" y="132" text-anchor="end" style="font-size:10.5px;font-family:var(--mono);fill:var(--dim)">GPT-5.1</text>
-  <rect x="150" y="108" width="458" height="26" rx="4" style="fill:var(--codex)"/>
-  <text x="618" y="127" style="font-size:14px;font-family:var(--display);font-weight:700;fill:var(--codex)">76.3%</text>
-  <text x="140" y="177" text-anchor="end" style="font-size:13px;font-family:var(--mono);fill:var(--ink)">Antigravity</text>
-  <text x="140" y="192" text-anchor="end" style="font-size:10.5px;font-family:var(--mono);fill:var(--dim)">Gemini 3 Pro</text>
-  <rect x="150" y="168" width="457" height="26" rx="4" style="fill:var(--antigravity)"/>
-  <text x="617" y="187" style="font-size:14px;font-family:var(--display);font-weight:700;fill:var(--antigravity)">76.2%</text>
-  <text x="150" y="232" style="font-size:11px;font-family:var(--mono);fill:var(--dim)">SWE-bench Verified · 실제 GitHub 이슈를 에이전트가 해결한 비율 (2025.11 기준)</text>
+<svg viewBox="0 0 760 252" width="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SWE-bench Verified 점수 추이: 2024년 GPT-4o 33퍼센트에서 2026년 Claude Opus 4.8 88.6퍼센트로 상승">
+  <line x1="55" y1="205" x2="745" y2="205" style="stroke:var(--rule);stroke-width:1.5"/>
+  <line x1="55" y1="40" x2="745" y2="40" style="stroke:var(--rule);stroke-width:1;stroke-dasharray:3 6"/>
+  <text x="50" y="44" text-anchor="end" style="font-size:10px;font-family:var(--mono);fill:var(--dim)">100%</text>
+  <polyline points="130,150 310,124 490,79 660,59" fill="none" style="stroke:var(--accent);stroke-width:2;stroke-dasharray:5 4;opacity:.55"/>
+  <rect x="92" y="150" width="76" height="55" rx="4" style="fill:var(--codex)"/>
+  <text x="130" y="142" text-anchor="middle" style="font-size:15px;font-family:var(--display);font-weight:700;fill:var(--codex)">33%</text>
+  <text x="130" y="224" text-anchor="middle" style="font-size:11px;font-family:var(--mono);fill:var(--ink)">GPT-4o</text>
+  <text x="130" y="239" text-anchor="middle" style="font-size:9.5px;font-family:var(--mono);fill:var(--dim)">2024.08</text>
+  <rect x="272" y="124" width="76" height="81" rx="4" style="fill:var(--claude)"/>
+  <text x="310" y="116" text-anchor="middle" style="font-size:15px;font-family:var(--display);font-weight:700;fill:var(--claude)">49%</text>
+  <text x="310" y="224" text-anchor="middle" style="font-size:11px;font-family:var(--mono);fill:var(--ink)">Claude 3.5</text>
+  <text x="310" y="239" text-anchor="middle" style="font-size:9.5px;font-family:var(--mono);fill:var(--dim)">2024.10</text>
+  <rect x="452" y="79" width="76" height="126" rx="4" style="fill:var(--antigravity)"/>
+  <text x="490" y="71" text-anchor="middle" style="font-size:15px;font-family:var(--display);font-weight:700;fill:var(--antigravity)">76%</text>
+  <text x="490" y="224" text-anchor="middle" style="font-size:11px;font-family:var(--mono);fill:var(--ink)">Gemini 3 Pro</text>
+  <text x="490" y="239" text-anchor="middle" style="font-size:9.5px;font-family:var(--mono);fill:var(--dim)">2025.11</text>
+  <rect x="622" y="59" width="76" height="146" rx="4" style="fill:var(--claude)"/>
+  <text x="660" y="51" text-anchor="middle" style="font-size:15px;font-family:var(--display);font-weight:700;fill:var(--claude)">88.6%</text>
+  <text x="660" y="224" text-anchor="middle" style="font-size:11px;font-family:var(--mono);fill:var(--ink)">Opus 4.8</text>
+  <text x="660" y="239" text-anchor="middle" style="font-size:9.5px;font-family:var(--mono);fill:var(--dim)">2026.05</text>
 </svg>
-<figcaption>코딩 특화 모델(GPT-5.2-Codex 등)은 80%대까지 — 세 진영 모두 「실무에 충분한」 구간에 있다</figcaption>
+<figcaption>SWE-bench Verified — 실제 GitHub 이슈 500개를 고친 비율. 막대 색은 만든 곳: <span class="t-codex">OpenAI</span> · <span class="t-claude">Anthropic</span> · <span class="t-anti">Google</span></figcaption>
 </figure>
 
-<p class="refs">출처 · Anthropic (Claude Opus 4.5, 2025.11) · Google (Gemini 3) · Vellum 벤치마크 정리</p>
+<p class="note"><b>포화의 신호</b> 너무 쉬워지자 OpenAI는 2026.2에 Verified를 폐기하고 더 어려운 <b>SWE-bench Pro</b>(최고 ~69%)로 옮겼다. 세 곳의 최신 모델이 함께 그 최전선에 있다.</p>
+
+<p class="refs">출처 · <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank">Opus 4.8</a> · <a href="https://blog.google/products-and-platforms/products/gemini/gemini-3/" target="_blank">Gemini 3</a> · <a href="https://www.swebench.com/verified.html" target="_blank">SWE-bench</a> · <a href="https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/" target="_blank">Verified 폐기 선언</a></p>
 
 ---
 
@@ -129,13 +135,13 @@ class: divider
 
 <p class="lead">DORA의 결론은 한 문장: <em>「AI는 증폭기(amplifier)다」</em> 도구 자체보다, 그것을 감싸는 플랫폼·관행의 성숙도가 가치를 가른다.</p>
 
-<p class="refs">출처 · DORA "State of AI-assisted Software Development 2025" (dora.dev) · Stack Overflow Developer Survey 2025 (survey.stackoverflow.co)</p>
+<p class="refs">출처 · <a href="https://dora.dev/dora-report-2025/" target="_blank">DORA 2025</a> · <a href="https://survey.stackoverflow.co/2025/ai/" target="_blank">Stack Overflow Developer Survey 2025</a></p>
 
 ---
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>공통점</span><em>기본 능력 — 공유하는 구조</em></p>
 
-# 셋이 똑같이 하는 일 — <em>계획 → 실행 → 검증</em>의 루프
+# 셋 다 계획하고, 실행하고, <em>스스로 검증한다</em>
 
 <div class="flow">
 <div><b>이해</b><span>전체 코드베이스를<br>읽고 맥락 파악</span></div>
@@ -154,7 +160,7 @@ class: divider
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>공통점</span><em>공통 인터페이스·기능</em></p>
 
-# 쓰는 법도 닮았다 — <em>같은 엔진, 여러 표면</em>
+# 엔진은 하나, <em>굴리는 표면은 여럿</em>
 
 <div class="split">
 <div>
@@ -186,7 +192,7 @@ class: divider codex
 
 ## 차별점 — 플랫폼마다 강한 곳이 다르다
 
-<p class="div-sub">이제 따로따로: 같은 능력 위에 각 팀이 올린 「특별한 한 가지」</p>
+<p class="div-sub">같은 능력 위에 각 팀이 얹은 특별한 한 가지</p>
 
 <p class="div-file">Claude Code · Codex · Antigravity</p>
 
@@ -214,7 +220,7 @@ class: claude
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Claude Code · 최신 업데이트</em></p>
 
-# 최근에 들어온 것 — <em>오케스트레이션</em>으로 확장
+# Claude Code는 요즘 <em>오케스트레이션</em>으로 넓어졌다
 
 <div class="split evidence">
 <div>
@@ -233,7 +239,7 @@ class: claude
 </div>
 </div>
 
-<p class="refs">출처 · code.claude.com/docs (whats-new W16~W24) · Anthropic 뉴스</p>
+<p class="refs">출처 · <a href="https://code.claude.com/docs/en/whats-new" target="_blank">code.claude.com — What's new</a> · <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank">Anthropic 뉴스</a></p>
 
 ---
 class: codex
@@ -259,12 +265,12 @@ class: codex
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>차별점</span><em>Codex · 최신 업데이트</em></p>
 
-# 최근에 들어온 것 — <em>모바일까지 잇는 통합 표면</em>
+# Codex는 이제 <em>모바일까지</em> 한 흐름으로 잇는다
 
 <div class="split evidence">
 <div>
 <div class="timeline">
-<div><b>GPT-5.2 · 5.3-Codex</b><span>SWE-bench 80% · Terminal-Bench 77.3% · ~25% 더 빠름</span></div>
+<div><b>GPT-5.5 · Codex 계열</b><span>Terminal-Bench 2.0 82.7% · SWE-bench Pro 58.6% — 최상위권</span></div>
 <div><b>Codex Remote — 모바일 GA</b><span>2026.6 · QR 페어링으로 폰에서 승인·diff 리뷰</span></div>
 <div><b>데스크탑 앱 통합</b><span>Task 사이드바 · PR 리뷰 페인 · Artifact 뷰어</span></div>
 <div><b>멀티에이전트 위임 · <code>/import</code></b><span>서브에이전트 위임 · Claude Code 설정 가져오기</span></div>
@@ -278,7 +284,7 @@ class: codex
 </div>
 </div>
 
-<p class="refs">출처 · developers.openai.com/codex/changelog · OpenAI 뉴스 (2025.09~2026.06)</p>
+<p class="refs">출처 · <a href="https://developers.openai.com/codex/changelog" target="_blank">Codex Changelog</a> · <a href="https://openai.com/index/introducing-upgrades-to-codex/" target="_blank">OpenAI 뉴스</a></p>
 
 ---
 class: antigravity
@@ -305,7 +311,7 @@ class: antigravity
 </div>
 </div>
 
-<p class="refs">출처 · antigravity.google · Google Developers Blog (2025.11.18) · Scalable Path 리뷰</p>
+<p class="refs">출처 · <a href="https://antigravity.google" target="_blank">antigravity.google</a> · <a href="https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/" target="_blank">Google Developers Blog</a></p>
 
 ---
 class: divider
@@ -327,7 +333,7 @@ class: divider
 
 <div class="split">
 <div>
-<p class="thesis">파이프·스크립트·자동화에 강한 CLI는 지금도 가장 강력한 표면이다. 셋 다 한 줄로 설치된다.</p>
+<p class="thesis">파이프·스크립트·자동화에선 CLI를 따라올 게 없다. 셋 다 한 줄로 설치된다.</p>
 
 ```bash
 # Claude Code
@@ -366,7 +372,7 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>인터페이스</span><em>데스크탑 앱이 푸는 것</em></p>
 
-# 데스크탑 앱 — <em>보면서, 누르면서, 따라가면서</em>
+# 데스크탑 앱은 <em>보고, 누르고, 따라가게</em> 한다
 
 <figure class="figure">
 <svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="데스크탑 앱 구조: 왼쪽 세션 사이드바, 가운데 대화·diff, 오른쪽 작업 추적·파일 패널">
@@ -412,7 +418,7 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>인터페이스</span><em>왜 데스크탑인가</em></p>
 
-# 그래서 데스크탑 앱을 권한다 — <em>네 가지 이유</em>
+# 데스크탑 앱을 권하는 <em>네 가지 이유</em>
 
 <div class="quad">
 <div class="pane"><h3><span class="latin">①</span>마우스로 편집</h3><p>긴 프롬프트를 쓰고 중간을 고치기 쉽다. 클릭·드래그·첨부가 자연스럽다.</p></div>
@@ -427,7 +433,7 @@ curl -fsSL https://chatgpt.com/codex/install.sh | sh
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>인터페이스</span><em>세 앱의 데스크탑</em></p>
 
-# 세 앱 모두 데스크탑을 갖췄다 — <em>강조점만 다르다</em>
+# 세 앱 모두 데스크탑이 있다. <em>방점만 다르다</em>
 
 <div class="trio">
 <div class="pane key" style="border-color:var(--claude)"><h3><span class="latin" style="color:var(--claude)">CLAUDE CODE</span>Mac · Win</h3><p>Chat·Cowork·Code 탭. worktree 격리 세션, diff 인라인 코멘트, 내장 브라우저로 <b>자동 검증</b>(autoVerify).</p></div>
@@ -513,9 +519,7 @@ class: divider claude
 
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>라이브 데모</em></p>
-
-# 시연 — <em>이 발표 자료를 Claude Code가 만들었다</em>
+# 이 발표 자료부터가, <em>Claude Code가 만든 것</em>이다
 
 <div class="steps">
 <div><b>스킬 호출</b><span><code>/slidev-deck-builder</code> — 7,000줄 CSS를 매번 짜지 않고 검증된 키트로 시작</span></div>
@@ -531,7 +535,7 @@ class: divider claude
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>데모 — 검증 루프</em></p>
 
-# 그 「검증 루프」가 만든 증거 — <em>34장을 모두 점검</em>
+# <em>검증 루프</em>가 34장을 모두 훑고 고쳤다
 
 <p class="thesis">에이전트는 마크다운만 쓰고 끝내지 않았다. 매 슬라이드를 렌더링해 캡처하고, 하단 넘침·코드칩 대비·밀도를 자동 감사한 뒤 고쳤다.</p>
 
@@ -548,7 +552,7 @@ class: claude
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>실전</span><em>데모 — 작동하는 산출물</em></p>
 
-# 그리고 — <em>작동하는 인터랙티브 탐색기</em>도 즉석에서
+# <em>작동하는 인터랙티브 탐색기</em>도 그 자리에서
 
 <div class="split evidence">
 <div>
@@ -584,7 +588,7 @@ class: divider
 
 ---
 
-<p class="crumbs"><b>코드 에이전트 비교</b><span>성숙도</span><em>시장이 말하는 것</em></p>
+<p class="crumbs"><b>코드 에이전트 비교</b><span>성숙도</span><em>시장 점유율·매출</em></p>
 
 # 코딩 시장은 이미 <em>Claude Code·Codex</em>로 기울어 있다
 
@@ -596,7 +600,7 @@ class: divider
 
 <p class="lead">두 제품은 <em>매출·사용량·생태계</em> 모두에서 이미 규모를 입증했다. 점유율은 6개월 만에 42% → 54%로 더 벌어졌다.</p>
 
-<p class="refs">출처 · Menlo Ventures "2025 State of Generative AI"(menlovc.com) · Anthropic · Constellation Research / Axios (2026.06)</p>
+<p class="refs">출처 · <a href="https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/" target="_blank">Menlo Ventures 2025</a> · <a href="https://www.constellationr.com/insights/news/openai-touts-broadening-codex-usage-5-million-weekly-active-users" target="_blank">Constellation Research</a></p>
 
 ---
 class: antigravity
@@ -604,7 +608,7 @@ class: antigravity
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>성숙도</span><em>Antigravity는 아직 베타</em></p>
 
-# Antigravity는 <em>미래에 대한 베팅</em> — 아직은 초기
+# Antigravity는 <em>잠재력은 크지만</em> 아직 초기다
 
 <div class="deflist">
 <div><b>출시 시점</b><span>2025.11.18 공개 프리뷰 — 가장 어리다. 무료지만 그만큼 검증 기간이 짧다</span></div>
@@ -615,18 +619,18 @@ class: antigravity
 
 <p class="note"><b>균형 있게</b> 잠재력은 분명하다 — 속도·멀티에이전트 오케스트레이션은 강점. 다만 <em>「신뢰성이 중요한 환경이라면 지금은 Claude Code」</em>(The New Stack, 2026).</p>
 
-<p class="refs">출처 · The New Stack · DataCamp · XDA · PromptArmor · Mindgard (2025.11~2026)</p>
+<p class="refs">출처 · <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/" target="_blank">The New Stack</a> · <a href="https://www.datacamp.com/blog/claude-code-vs-antigravity" target="_blank">DataCamp</a> · <a href="https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data" target="_blank">PromptArmor</a></p>
 
 ---
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>성숙도</span><em>한눈에 비교</em></p>
 
-# 세 줄 요약 — <em>강점은 다르고, 결론은 하나</em>
+# 강점은 셋이 다르고, <em>결론은 하나</em>다
 
 | 항목 | Claude Code | Codex | Antigravity |
 |---|---|---|---|
 | 강한 곳 | 신뢰성·긴 자율작업·스킬 | 클라우드 위임·코드 리뷰 | 속도·멀티에이전트·관제 |
-| 기본 모델 | Opus 4.8 | GPT-5-Codex 계열 | Gemini 3 Pro |
+| 기본 모델 | Opus 4.8 | GPT-5.5 계열 | Gemini 3 Pro |
 | 성숙도 | 높음 (ARR $1B+) | 높음 (주간 5M+) | 초기 (2025.11~) |
 | 지금 추천 | 복잡·중요 작업 | 클라우드·대규모 위임 | 실험·미래 대비 |
 
@@ -639,15 +643,15 @@ class: text-center
 
 <p class="eyebrow">결론</p>
 
-<p class="lead" style="font-size:1.5rem;max-width:54rem">무엇을 골라도 <em>만들 수 있다.</em><br>지금 확실히 만들어야 한다면 — 성숙한 <span class="t-claude">Claude Code</span>·<span class="t-codex">Codex</span>.<br>내일을 함께 보고 싶다면 — <span class="t-anti">Antigravity</span>를 곁에.</p>
+<p class="lead" style="font-size:1.5rem;max-width:54rem">셋 중 무엇으로도 원하는 걸 만든다.<br>지금 바로 맡길 일이라면 성숙한 <span class="t-claude">Claude Code</span>·<span class="t-codex">Codex</span>,<br><span class="t-anti">Antigravity</span>는 미리 시험해 둘 카드다.</p>
 
-<p style="font-size:0.86rem;color:var(--dim);margin-top:1.3rem">세 길 모두 같은 목적지로 간다. 차이는 「지금 얼마나 단단히 받쳐주느냐」다.</p>
+<p style="font-size:0.86rem;color:var(--dim);margin-top:1.3rem">차이는 무엇을 만드느냐가 아니라, 지금 얼마나 단단히 받쳐주느냐에 있다.</p>
 
 ---
 
 <p class="crumbs"><b>코드 에이전트 비교</b><span>마무리</span><em>시작하는 법</em></p>
 
-# 오늘 바로 — <em>데스크탑 앱으로 한 사이클</em>
+# 데스크탑 앱으로, <em>한 사이클</em>부터
 
 <div class="steps">
 <div><b>데스크탑 앱 설치</b><span>Claude Code(Mac/Win) 또는 Codex(Mac/Win) — CLI보다 마우스·추적이 편하다</span></div>
@@ -665,13 +669,13 @@ class: text-center
 
 <p class="eyebrow">출처 · References</p>
 
-<div class="refs" style="text-align:left;max-width:50rem;margin:0 auto;line-height:2.1">
-<b style="color:var(--ink)">공식문서</b> · code.claude.com/docs · developers.openai.com/codex · antigravity.google<br>
-<b style="color:var(--ink)">벤치마크</b> · Anthropic Opus 4.5/4.8 · Google Gemini 3 · OpenAI GPT-5-Codex · vellum.ai<br>
-<b style="color:var(--ink)">설문·시장</b> · DORA 2025 (dora.dev) · Stack Overflow Survey 2025 · Menlo Ventures "State of GenAI 2025"<br>
-<b style="color:var(--ink)">사용량·성숙도</b> · Constellation Research · Axios · The New Stack · DataCamp · XDA<br>
-<b style="color:var(--ink)">보안</b> · PromptArmor · Mindgard · The Hacker News<br>
-<b style="color:var(--ink)">커뮤니티</b> · Hacker News "What makes Claude Code so good" · last30days (Reddit·X·GitHub, 2026.06)
+<div class="refs" style="text-align:left;max-width:52rem;margin:0 auto;line-height:2.2">
+<b style="color:var(--ink)">공식문서</b> · <a href="https://code.claude.com/docs" target="_blank">code.claude.com</a> · <a href="https://developers.openai.com/codex" target="_blank">developers.openai.com/codex</a> · <a href="https://antigravity.google" target="_blank">antigravity.google</a><br>
+<b style="color:var(--ink)">벤치마크</b> · <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank">Anthropic Opus 4.8</a> · <a href="https://blog.google/products-and-platforms/products/gemini/gemini-3/" target="_blank">Google Gemini 3</a> · <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank">OpenAI GPT-5.5</a> · <a href="https://www.swebench.com/verified.html" target="_blank">SWE-bench</a> · <a href="https://www.vellum.ai/blog/claude-opus-4-8-benchmarks-explained" target="_blank">Vellum</a><br>
+<b style="color:var(--ink)">설문·시장</b> · <a href="https://dora.dev/dora-report-2025/" target="_blank">DORA 2025</a> · <a href="https://survey.stackoverflow.co/2025/ai/" target="_blank">Stack Overflow 2025</a> · <a href="https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/" target="_blank">Menlo Ventures</a><br>
+<b style="color:var(--ink)">사용량·성숙도</b> · <a href="https://www.constellationr.com/insights/news/openai-touts-broadening-codex-usage-5-million-weekly-active-users" target="_blank">Constellation</a> · <a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/" target="_blank">The New Stack</a> · <a href="https://www.datacamp.com/blog/claude-code-vs-antigravity" target="_blank">DataCamp</a> · <a href="https://www.xda-developers.com/used-claude-code-google-antigravity-codex-for-month-have-clear-winner/" target="_blank">XDA</a><br>
+<b style="color:var(--ink)">보안</b> · <a href="https://www.promptarmor.com/resources/google-antigravity-exfiltrates-data" target="_blank">PromptArmor</a> · <a href="https://mindgard.ai/blog/google-antigravity-persistent-code-execution-vulnerability" target="_blank">Mindgard</a><br>
+<b style="color:var(--ink)">커뮤니티</b> · <a href="https://news.ycombinator.com/item?id=44998295" target="_blank">Hacker News</a> · last30days (Reddit·X·GitHub, 2026.06)
 </div>
 
 <p style="font-size:0.82rem;color:var(--dim);margin-top:1.4rem">이 발표 자료는 Claude Code가 slidev-deck-builder 스킬 + 병렬 서브에이전트 리서치 + 캡처-검증 루프로 제작했습니다.</p>
